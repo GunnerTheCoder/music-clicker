@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = 3000;
 // Replace with your actual Vercel URL:
-const FRONTEND_ORIGIN = 'https://a1b2c3d4.ngrok.io';
+const FRONTEND_ORIGIN = 'https://e59f14a07aad.ngrok-free.app';
 
 const DATA_DIR = path.join(__dirname, 'data');
 
