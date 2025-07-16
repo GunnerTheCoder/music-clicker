@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Enter Username</h2>
+    <input id="username" placeholder="Your name">
+    <button id="btnLogin">Login</button>
+  </div>
+
+  <div id="game" style="display:none">
+    <div class="header">
+      <div>Money: $<span id="money">0</span></div>
+      <button id="logout">Logout</button>
+    </div>
+    <div class="click-area">
+      <button id="note">🎵 Click me!</button>
+    </div>
+    <div class="inventory">
+      <h3>Your Collection</h3>
+      <div>
+        <strong>Singles</strong><div id="singlesList"></div>
+      </div>
+      <div>
+        <strong>Albums</strong><div id="albumsList"></div>
+      </div>
+    </div>
+    <div class="equipped">
+      <h3>Equipped</h3>
+      <div><strong>Singles:</strong><span id="equippedSingles"></span></div>
+      <div><strong>Albums:</strong><span id="equippedAlbums"></span></div>
+    </div>
+    <div class="store">
+      <h3>Buy Packs ($1000 each)</h3>
+      <div id="packs"></div>
+    </div>
+  </div>
+
+  <!-- point at your PC’s backend -->
+  <script>
+    window.API_BASE = 'http://174.59.35.59:3000';
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body { font-family: sans-serif; background:#f0f0f0; margin:0; padding:20px; }
+#login, #game { max-width:600px; margin:auto; background:#fff; padding:20px; border-radius:8px; }
+.header { display:flex; justify-content:space-between; margin-bottom:10px; }
+.click-area { text-align:center; margin:20px 0; }
+#note { font-size:48px; padding:20px; border:none; cursor:pointer; }
+.inventory, .equipped, .store { margin-top:20px; }
+.inventory div, .store div { margin-bottom:10px; }
+.item { display:inline-block; margin:5px; padding:5px; border:1px solid #ccc; border-radius:4px; cursor:pointer; }
+.equipped .item { background:#fffae6; }
