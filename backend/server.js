@@ -1,8 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
-import path from 'path';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { v4 as uuid } from 'uuid';
+
+// ES‑module __dirname shim
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const PORT = 3000;
