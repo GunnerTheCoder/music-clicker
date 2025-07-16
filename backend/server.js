@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = 3000;
 // Replace with your actual Vercel URL:
-const FRONTEND_ORIGIN = 'https://music-clicker.vercel.app';
+const FRONTEND_ORIGIN = 'https://a1b2c3d4.ngrok.io';
 
 const DATA_DIR = path.join(__dirname, 'data');
 
